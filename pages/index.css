@@ -13,7 +13,7 @@
   font-family: var(--font-family-inter);
   font-size: 16px;
   line-height: 20px;
-  width: clamp(1100px, 100%, 1440px);
+  width: clamp(1100px, 100%, 1600px);
   margin: 0 auto;
 }
 
