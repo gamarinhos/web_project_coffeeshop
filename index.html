@@ -27,17 +27,93 @@
     <div class="page">
       <!-------- Hero -------->
       <header class="header">
-        <h1 class="header__title">Café especial na biblioteca Tripleten</h1>
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Logo"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li class="nav__link">
+              <a href="#recipes">Receitas</a>
+            </li>
+            <li class="nav__link">
+              <a href="#reservation">Reservar uma mesa</a>
+            </li>
+            <li class="nav__link">
+              <a href="#contact">Contato</a>
+            </li>
+          </ul>
+        </nav>
+
+        <h1 class="header__title">
+          <span class="header__span-accent">Café especial</span><br />na
+          biblioteca Tripleten
+        </h1>
+        <p class="header__description">
+          Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
+          você e vibrações aconchegantes para soltar a criatividade.
+        </p>
+
+        <img
+          class="header__image"
+          src="./images/inside_coffee_shop.png"
+          alt="Café"
+        />
+
+        <div class="header__footer">
+          <div class="header__paragraph">
+            <p>Horários:</p>
+            <p>Segunda a Sexta: 08:00 - 18:00</p>
+            <p>Sábado e Domingo: 08:00 - 14:00</p>
+          </div>
+          <div class="header__paragraph">
+            <p>200 Success Avenue, a cidade de Triple Peaks</p>
+          </div>
+        </div>
       </header>
 
       <main class="content">
         <!-------- Recipes -------->
-        <section class="recipes">
-          <h2>Receitas</h2>
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Receitas</h2>
+          <p class="recipes__subtitle">
+            Confira algumas receitas que coletamos para seu lachinho caseiro:
+          </p>
+          <ul class="recipes__videos">
+            <li class="recipes__video-item">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc?si=Qwh8YZhMaawpzecV"
+                title="YouTube video player"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="recipes__video-caption">
+                <p>Receira Aeropress</p>
+                <p>~5 min</p>
+              </div>
+            </li>
+            <li class="recipes__video-item">
+              <iframe
+                class="recipes__iframe"
+                src="https://www.youtube.com/embed/st571DYYTR8?si=yU4lGEn-SLMfk1-h"
+                title="YouTube video player"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="recipes__video-caption">
+                <p>Receira Aeropress</p>
+                <p>~5 min</p>
+              </div>
+            </li>
+          </ul>
         </section>
 
         <!-------- Reservation -------->
-        <section class="reservation">
+        <section class="reservation" id="reservation">
           <h2>Reserva</h2>
           <form class="reservation__form">
             <input type="text" placeholder="Nome" />
@@ -47,7 +123,7 @@
       </main>
 
       <!-------- Footer -------->
-      <footer class="footer">
+      <footer class="footer" id="contact">
         <div class="footer__columns">
           <div class="footer__column">
             <h2>Mídia social</h2>
@@ -66,7 +142,6 @@
           </div>
         </div>
       </footer>
-      <!-------- End of Page -------->
     </div>
   </body>
 </html>

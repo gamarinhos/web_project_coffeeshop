@@ -9,6 +9,10 @@
   padding: 0;
 }
 
+.html {
+  padding: 0;
+}
+
 .page {
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
@@ -18,7 +22,159 @@
   margin: 0 auto;
 }
 
-.header {
-  background-color: #fff;
+/* ---------- Navigation ---------- */
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px 0px 55px;
 }
 
+.nav__logo {
+  object-fit: contain;
+  width: 105px;
+  height: 39px;
+}
+
+.nav__links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__link {
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* ---------- Header ---------- */
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-image: url(../images/background_header.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+}
+
+.header__content {
+  display: flex;
+}
+
+.header__text {
+  width: 50%;
+  gap: 28px;
+}
+
+.header__title {
+  font-size: 58px;
+  line-height: 72px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  max-width: 709px;
+  margin: 183px 0 28px 80px;
+}
+
+.header__span-accent {
+  font-family: "Noto Serif", Times New Roman, serif;
+  font-size: 58px;
+  font-style: italic;
+  line-height: 72px;
+  font-weight: normal;
+  color: #2F80ED;
+}
+
+.header__description {
+  font-family: "Noto Serif", Times New Roman, serif;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 683px;
+  margin-left: 80px;
+}
+
+.header__image {
+  position: absolute;
+  top: 124px;
+  right: 5px;
+  width: 646px;
+  height: 568px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.header__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: auto 80px 40px;
+}
+
+.header__paragraph {
+  font-size: 16px;
+  line-height: 20px;
+  color: #838383;
+}
+
+/* ---------- Recipes ---------- */
+.recipes {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background-color: #0a2750;
+  background-image: url(../images/background_recipes.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.recipes__title {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 44px;
+  line-height: 52px;
+  font-weight: 500;
+  max-width: 580px;
+  margin: 100px 0 24px 80px;
+}
+
+.recipes__subtitle {
+  font-family: "Noto Serif", Times New Roman, serif;
+  font-size: 20px;
+  line-height: 30px;
+  max-width: 438px;
+  margin: 0 0 80px 80px;
+}
+
+.recipes__videos {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+  margin: 0 auto 215px;
+}
+
+.recipes__video-item {
+  width: 480px;
+  height: 273px;
+}
+
+.recipes__iframe {
+  border: none;
+  width: 480px;
+  height: 273px;
+  margin-bottom: 24px;
+}
+
+.recipes__video-caption {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+}
